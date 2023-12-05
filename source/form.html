@@ -38,29 +38,31 @@
 
         <!-- Разметка полей о коте-->
         <section class="program-selection__cat cat-info">
+          <h2 class="cat-info__heading form-medium-heading visually-hidden">Заполните информацию о вашем коте</h2>
           <fieldset class="cat-info__filter">
             <legend class="cat-info__title visually-hidden">Данные о коте</legend>
             <label class="cat-info__label">
               Имя:*
-              <input class="cat-info__form" type="text" placeholder="Введите имя кота" value="Барсик">
+              <input class="cat-info__form" type="text" name="cat-info-form" placeholder="Введите имя кота" value="Барсик">
             </label>
 
             <label class="cat-info__label">
               Вес (кг):*
-              <input class="cat-info__form" type="number" placeholder="Введите вес кота" value="7">
+              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите вес кота" value="7">
             </label>
 
             <label class="cat-info__label">
               Возраст (лет):
-              <input class="cat-info__form" type="number" placeholder="Введите возраст кота" value="7">
+              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите возраст кота" value="7">
             </label>
           </fieldset>
         </section>
 
         <!-- Разметка радиокнопок -->
         <section class="program-selection__program-type program-type">
+          <h2 class="cat-info__heading form-medium-heading visually-hidden">Выберите программу для кота</h2>
           <fieldset class="program-type__filter">
-            <legend class="program-type__title visually-hidden">Выберите цель программы:</legend>
+            <legend class="program-type__title visually-hidden">Выбор программы:</legend>
             <ul class="program-type__radio-list">
               <li class="program-type__radio-item">
                 <label>
@@ -83,16 +85,17 @@
 
         <!-- Разметка полей о владельце-->
         <section class="program-selection__owner owner-info">
+          <h2 class="cat-info__heading form-medium-heading visually-hidden">Заполните ваши контактные данные</h2>
           <fieldset class="owner-info__field">
             <legend class="owner-info__title visually-hidden">Данные о владельце кота</legend>
             <label class="owner-info__email">
               e-mail:*
-              <input class="email-form" type="email" placeholder="Введите ваш e-mail" value="kuklachev@gmail.com">
+              <input class="email-form" type="email" name="email-form" placeholder="Введите ваш e-mail" value="kuklachev@gmail.com">
             </label>
 
             <label class="owner-info__tel">
               Телефон:*
-              <input class="tel-form" type="tel" placeholder="Введите ваш телефон" value="8 (960) 900-60-90">
+              <input class="tel-form" type="tel" name="tel-form" placeholder="Введите ваш телефон" value="8 (960) 900-60-90">
             </label>
 
           </fieldset>
