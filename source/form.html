@@ -43,12 +43,12 @@
             <legend class="cat-info__title visually-hidden">Данные о коте</legend>
             <label class="cat-info__label">
               Имя:*
-              <input class="cat-info__form" type="text" name="cat-info-form" placeholder="Введите имя кота" value="Барсик">
+              <input class="cat-info__form" type="text" name="cat-info-form" placeholder="Введите имя кота" value="Барсик" required>
             </label>
 
             <label class="cat-info__label">
               Вес (кг):*
-              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите вес кота" value="7">
+              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите вес кота" value="7" required>
             </label>
 
             <label class="cat-info__label">
@@ -90,12 +90,12 @@
             <legend class="owner-info__title visually-hidden">Данные о владельце кота</legend>
             <label class="owner-info__email">
               e-mail:*
-              <input class="email-form" type="email" name="email-form" placeholder="Введите ваш e-mail" value="kuklachev@gmail.com">
+              <input class="email-form" type="email" name="email-form" placeholder="Введите ваш e-mail" value="kuklachev@gmail.com" required>
             </label>
 
             <label class="owner-info__tel">
               Телефон:*
-              <input class="tel-form" type="tel" name="tel-form" placeholder="Введите ваш телефон" value="8 (960) 900-60-90">
+              <input class="tel-form" type="tel" name="tel-form" placeholder="Введите ваш телефон" value="8 (960) 900-60-90" required>
             </label>
 
           </fieldset>
@@ -147,11 +147,8 @@
       <div class="big-footer__cooperation cooperation">
         <h3 class="cooperation__header">Приглашаем к сотрудничеству!</h3>
         <address class="cooperation__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <img class="big-footer__cooperation map" src="#" width="320" height="362" alt="Адрес компании Cat Energy на карте">
       </div>
-
-      <map class="big-footer__cooperation map" name="address-on-map">
-        <area href="#" alt="Адрес компании Cat Energy на карте">
-      </map>
 
       <div class="big-footer footer">
         <a class="footer__logo" href="#">
