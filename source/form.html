@@ -14,124 +14,110 @@
         <img class="main-header__logo-img" src="#" width="33" height="38" alt="Логотип Cat Energy">
         <img class="main-header__logo-text" src="#" width="101" height="18" alt="CAT ENERGY">
       </a>
-      <nav class="main-header__nav nav-menu">
-        <button class="nav-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="nav-menu__list">
+      <nav class="main-header__nav menu">
+        <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="menu__list nav-menu">
           <li class="nav-menu__item nav-menu__item--current">
-            <a class="nav-menu__item-link" href="index.html">Главная</a>
+            <a class="nav-menu__link" href="#">Главная</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__item-link" href="catalog.html">Каталог продукции</a>
+            <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav-menu__item">
-            <a class="nav-menu__item-link" href="#">Подбор программы</a>
+          <li class="nav-menu__item" current>
+            <a class="nav-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="form-heading">Подбор программы</h1>
-      <p>Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <h1 class="main-heading">Подбор программы</h1>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <form class="program-selection" action="https://echo.htmlacademy.ru/" method="post">
 
         <!-- Разметка полей о коте-->
-        <section class="program-selection__cat cat-info">
-          <h2 class="cat-info__heading form-medium-heading visually-hidden">Заполните информацию о вашем коте</h2>
-          <fieldset class="cat-info__filter">
-            <legend class="cat-info__title visually-hidden">Данные о коте</legend>
-            <label class="cat-info__label">
-              Имя:*
-              <input class="cat-info__form" type="text" name="cat-info-form" placeholder="Введите имя кота" value="Барсик" required>
-            </label>
-
-            <label class="cat-info__label">
-              Вес (кг):*
-              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите вес кота" value="7" required>
-            </label>
-
-            <label class="cat-info__label">
-              Возраст (лет):
-              <input class="cat-info__form" type="number" name="cat-info-form" placeholder="Введите возраст кота" value="7">
-            </label>
-          </fieldset>
-        </section>
+        <fieldset class="program-selection__cat cat-info">
+          <legend class="cat-info__title form-medium-heading visually-hidden">Данные о коте</legend>
+          <label class="cat-info__label">
+            Имя:*
+            <input class="cat-info__field" type="text" name="cat-info-field" placeholder="Барсик" required>
+          </label>
+          <label class="cat-info__label">
+            Вес (кг):*
+            <input class="cat-info__field" type="number" name="cat-info-field" placeholder="7" required>
+          </label>
+          <label class="cat-info__label">
+            Возраст (лет):
+            <input class="cat-info__field" type="number" name="cat-info-field" placeholder="7">
+          </label>
+        </fieldset>
 
         <!-- Разметка радиокнопок -->
-        <section class="program-selection__program-type program-type">
-          <h2 class="cat-info__heading form-medium-heading visually-hidden">Выберите программу для кота</h2>
-          <fieldset class="program-type__filter">
-            <legend class="program-type__title visually-hidden">Выбор программы:</legend>
-            <ul class="program-type__radio-list">
-              <li class="program-type__radio-item">
-                <label>
-                  <input type="radio" name="program-type" value="slim" checked>Похудение
-                </label>
-              </li>
-              <li class="program-type__radio-item">
-                <label>
-                  <input type="radio" name="program-type" value="pro">Набор массы
-                </label>
-              </li>
-              <li class="program-type__radio-item">
-                <label>
-                  <input type="radio" name="program-type" value="need-advice">Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </section>
+        <fieldset class="program-selection__program-type program-type">
+          <legend class="program-type__title form-medium-heading visually-hidden">Выбор программы:</legend>
+          <ul class="program-type__radio-list">
+            <li class="program-type__radio-item">
+              <label class="program-type__radio-label">
+                <input class="program-type__radio-answer" type="radio" name="program-type" value="slim" checked>Похудение
+              </label>
+            </li>
+            <li class="program-type__radio-item">
+              <label class="program-type__radio-label">
+                <input class="program-type__radio-answer" type="radio" name="program-type" value="pro">Набор массы
+              </label>
+            </li>
+            <li class="program-type__radio-item">
+              <label class="program-type__radio-label">
+                <input class="program-type__radio-answer" type="radio" name="program-type" value="need-advice">Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
         <!-- Разметка полей о владельце-->
-        <section class="program-selection__owner owner-info">
-          <h2 class="cat-info__heading form-medium-heading visually-hidden">Заполните ваши контактные данные</h2>
-          <fieldset class="owner-info__field">
-            <legend class="owner-info__title visually-hidden">Данные о владельце кота</legend>
-            <label class="owner-info__email">
-              e-mail:*
-              <input class="email-form" type="email" name="email-form" placeholder="Введите ваш e-mail" value="kuklachev@gmail.com" required>
-            </label>
-
-            <label class="owner-info__tel">
-              Телефон:*
-              <input class="tel-form" type="tel" name="tel-form" placeholder="Введите ваш телефон" value="8 (960) 900-60-90" required>
-            </label>
-          </fieldset>
-        </section>
+        <fieldset class="program-selection__owner owner-info">
+          <legend class="owner-info__title form-medium-heading visually-hidden">Данные о владельце кота</legend>
+          <label class="owner-info__email">
+            e-mail:*
+            <input class="email-field" type="email" name="email-field" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="owner-info__tel">
+            Телефон:*
+            <input class="tel-field" type="tel" name="tel-field" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </fieldset>
 
         <!-- Разметка комментариев-->
-        <section class="program-selection__comments comments">
+        <div class="program-selection__comments comments">
           <h2 class="comments__heading form-medium-heading">Комментарий</h2>
-          <textarea name="comment" id="comment-field" rows="10" cols="76">
-            Расскажите обо всех повадках кота
-          </textarea>
-        </section>
+          <label class="comments__field">
+            <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
 
         <!-- Разметка раздела Дополнительно -->
-        <section class="program-selection__additional additional">
-          <h2 class="additional__heading form-medium-heading">Дополнительно</h2>
-          <fieldset class="additional__filter">
-            <legend class="additional__title hidden">Дополнительные товары</legend>
+          <fieldset class="program-selection__additional additional">
+            <legend class="additional__title form-medium-heading visually-hidden">Дополнительные товары</legend>
             <ul class="additional__checkbox-list">
               <li class="additional__item">
-                <label>
-                  <input type="checkbox" name="sweetener" checked>Сахарозаменитель
+                <label class="additional__label">
+                  <input class="additional-answer" type="checkbox" name="sweetener" checked>Сахарозаменитель
                 </label>
               </li>
               <li class="additional__item">
-                <label>
-                  <input type="checkbox" name="still-water">Питьевая вода
+                <label class="additional__label">
+                  <input class="additional-answer" type="checkbox" name="still-water">Питьевая вода
                 </label>
               </li>
               <li class="additional__item">
-                <label>
-                  <input type="checkbox" name="milk">Молоко
+                <label class="additional__label">
+                  <input class="additional-answer" type="checkbox" name="milk">Молоко
                 </label>
               </li>
               <li class="additional__item">
-                <label>
-                  <input type="checkbox" name="vitamines">Витамины
+                <label class="additional__label">
+                  <input class="additional-answer" type="checkbox" name="vitamines">Витамины
                 </label>
               </li>
             </ul>
@@ -140,34 +126,33 @@
           <p class="program-selection__mandatory-field">* — Обязательные поля</p>
         </section>
       </form>
-
     </main>
 
     <footer class="big-footer">
       <div class="big-footer__cooperation cooperation">
-        <h3 class="cooperation__header">Приглашаем к сотрудничеству!</h3>
-        <address class="cooperation__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <h3 class="cooperation__heading main-small-heading">Приглашаем к сотрудничеству!</h3>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <img class="big-footer__cooperation map" src="#" width="320" height="362" alt="Адрес компании Cat Energy на карте">
       </div>
 
-      <div class="big-footer__main footer">
+      <div class="big-footer__general footer">
         <a class="footer__logo" href="#">
           <img class="footer__logo-text" src="#" width="128" height="24" alt="CAT ENERGY">
         </a>
 
         <ul class="footer__social-list social-list">
           <li class="social-list__items">
-            <a href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list__items">
-            <a href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
           <li class="social-list__items">
-            <a href="#">
+            <a class="social-list__link" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
