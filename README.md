@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Anastasia Skorokhodenko](https://up.htmlacademy.ru/adaptive/30/user/2261597).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина] (https://htmlacademy.ru/profile/id2108789).
 
 ---
 
