@@ -5,6 +5,12 @@
     <title>CAT ENERGY - функциональное питание для котов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/180.png">
+    <link rel="icon" sizes="192x192" href="favicons/192.png">
+    <link rel="icon" sizes="512x512" href="favicons/512.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
 
@@ -23,7 +29,7 @@
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav-menu__item" current>
+          <li class="nav-menu__item">
             <a class="nav-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -35,7 +41,12 @@
       <section class="hero">
         <h1 class="hero__heading main-heaging">Функциональное питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__banner" src="#" width="280" height="270" alt="Изображение стакана с питанием для котов Cat Energy">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="449">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__banner" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Изображение стакана с питанием для котов Cat Energy">
+        </picture>
+
         <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
       </section>
 
@@ -94,13 +105,20 @@
         </div>
 
         <div class="example__slider">
-          <img class="example__slider-img--before" src="#" width="280" height="256" alt="">
-          <img class="example__slider-img--after" src="#" width="280" height="256" alt="">
-          <div class="example-slider__toggle">
-            <button class="example__slider-toggle--left" type="button">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slider-img example__slider-img--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__slider-img example__slider-img--after"  src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота">
+          </picture>
+
+          <div class="example__slider-toggle">
+            <button class="example__slider-toggle example__slider-toggle--left" type="button">
               <span class="visually-hidden">Сдвиньте слайдер влево</span>
             </button>
-            <button class="example__slider-toggle--right" type="button">
+            <button class="example__slider-toggle example__slider-toggle--right" type="button">
               <span class="visually-hidden">Сдвиньте слайдер вправо</span>
             </button>
           </div>
@@ -113,7 +131,11 @@
       <div class="big-footer__cooperation big-footer__cooperation--main cooperation">
         <h3 class="cooperation__heading main-small-heading">Приглашаем к сотрудничеству!</h3>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="cooperation__map" src="#" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="cooperation__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        </picture>
       </div>
 
       <div class="big-footer__general footer">
@@ -144,8 +166,6 @@
           <img class="copywrite__logo-img" src="#"  width="27" height="34" alt="Логотип Html Academy">
         </a>
       </div>
-
     </footer>
-
   </body>
 </html>

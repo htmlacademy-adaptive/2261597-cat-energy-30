@@ -5,6 +5,12 @@
     <title>CAT ENERGY - функциональное питание для котов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/180.png">
+    <link rel="icon" sizes="192x192" href="favicons/Favicon/192.png">
+    <link rel="icon" sizes="512x512" href="favicons/512.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
 
@@ -17,13 +23,13 @@
       <nav class="main-header__nav menu">
         <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="menu__list nav-menu">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="index.html">Главная</a>
+          </li>
           <li class="nav-menu__item nav-menu__item--current">
-            <a class="nav-menu__link" href="#">Главная</a>
+            <a class="nav-menu__link" href="#">Каталог продукции</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav-menu__item" current>
             <a class="nav-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -36,7 +42,11 @@
         <ul class="catalog__list">
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy PRO 500 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-pro500-chicken-desktop@1x.png 1x, images/can-pro500-chicken-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-pro500-chicken-tablet@1x.png 1x, images/can-pro500-chicken-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-pro500-chicken-mobile@1x.png" srcset="images/can-pro500-chicken-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy PRO 500 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Pro 500 г</h2>
             </a>
             <dl class="card__description-list">
@@ -52,7 +62,11 @@
 
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy Pro 1000 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-pro1000-chicken-desktop@1x.png 1x, images/can-pro1000-chicken-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-pro1000-chicken-tablet@1x.png 1x, images/can-pro1000-chicken-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-pro1000-chicken-mobile@1x.png" srcset="images/can-pro1000-chicken-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy Pro 1000 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Pro 1000 г</h2>
             </a>
             <dl class="card__description-list">
@@ -68,7 +82,11 @@
 
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy PRO 500 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-pro500-fish-desktop@1x.png 1x, images/can-pro500-fish-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-pro500-fish-tablet@1x.png 1x, images/can-pro500-fish-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-pro500-fish-mobile@1x.png" srcset="images/can-pro500-fish-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy PRO 500 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Pro 500 г</h2>
             </a>
             <dl class="card__description-list">
@@ -84,7 +102,11 @@
 
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy Pro 1000 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-pro1000-fish-desktop@1x.png 1x, images/can-pro1000-fish-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-pro1000-fish-tablet@1x.png 1x, images/can-pro1000-fish-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-pro1000-fish-mobile@1x.png" srcset="images/can-pro1000-fish-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy Pro 1000 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Pro 1000 г</h2>
             </a>
             <dl class="card__description-list">
@@ -100,7 +122,11 @@
 
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy Slim 500 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-slim500-buckwheat-desktop@1x.png 1x, images/can-slim500-buckwheat-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-slim500-buckwheat-tablet@1x.png 1x, images/can-slim500-buckwheat-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-slim500-buckwheat-mobile@1x.png" srcset="images/can-slim500-buckwheat-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy Slim 500 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Slim 500 г</h2>
             </a>
             <dl class="card__description-list">
@@ -116,7 +142,11 @@
 
           <li class="catalog__card card">
             <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy Slim 1000 г">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-slim1000-buckwheat-desktop@1x.png 1x, images/can-slim1000-buckwheat-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-slim1000-buckwheat-tablet@1x.png 1x, images/can-slim1000-buckwheat-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-slim1000-buckwheat-mobile@1x.png" srcset="images/can-slim1000-buckwheat-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy Slim 1000 г">
+              </picture>
               <h2 class="card__heading main-small-heading">Cat Energy Slim 1000 г</h2>
             </a>
             <dl class="card__description-list">
@@ -131,9 +161,13 @@
           </li>
 
           <li class="catalog__card card">
-              <a class="card__link" href="#">
-              <img class="card__img" src="#" width="140" height="407" alt="фото товара Cat Energy Slim 500 г">
-            <h2 class="card__heading main-small-heading">Cat Energy Slim 500 г</h2>
+            <a class="card__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/can-slim500-rice-desktop@1x.png 1x, images/can-slim500-rice-desktop@2x.png 2x" width="169" height="210">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/can-slim500-rice-tablet@1x.png 1x, images/can-slim500-rice-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__img" src="images/can-slim500-rice-mobile@1x.png" srcset="images/can-slim500-rice-mobile@2x.png 2x" width="140" height="107"  alt="фото товара Cat Energy Slim 500 г">
+              </picture>
+              <h2 class="card__heading main-small-heading">Cat Energy Slim 500 г</h2>
             </a>
             <dl class="card__description-list">
               <dt class="card__term">Масса</dt>
@@ -152,7 +186,6 @@
             <a class="card__button button button-secondary" href="#">Показать все</a>
           </li>
       </ul>
-
       </section>
 
       <section class="additional-products">
@@ -209,7 +242,11 @@
       <div class="big-footer__cooperation cooperation">
         <h3 class="cooperation__heading main-small-heading">Приглашаем к сотрудничеству!</h3>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="cooperation__map" src="#" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="cooperation__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        </picture>
       </div>
 
       <div class="big-footer__general footer">

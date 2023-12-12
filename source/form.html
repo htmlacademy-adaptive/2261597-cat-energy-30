@@ -5,6 +5,12 @@
     <title>CAT ENERGY - функциональное питание для котов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/180.png">
+    <link rel="icon" sizes="192x192" href="favicons/192.png">
+    <link rel="icon" sizes="512x512" href="favicons/512.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
 
@@ -17,14 +23,14 @@
       <nav class="main-header__nav menu">
         <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="menu__list nav-menu">
-          <li class="nav-menu__item nav-menu__item--current">
-            <a class="nav-menu__link" href="#">Главная</a>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="index.html">Главная</a>
           </li>
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav-menu__item" current>
-            <a class="nav-menu__link" href="form.html">Подбор программы</a>
+          <li class="nav-menu__item  nav-menu__item--current">
+            <a class="nav-menu__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -91,40 +97,38 @@
         <!-- Разметка комментариев-->
         <div class="program-selection__comments comments">
           <h2 class="comments__heading form-medium-heading">Комментарий</h2>
-          <label class="comments__field">
-            <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
+          <textarea name="comments__field" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
         <!-- Разметка раздела Дополнительно -->
-          <fieldset class="program-selection__additional additional">
-            <legend class="additional__title form-medium-heading visually-hidden">Дополнительные товары</legend>
-            <ul class="additional__checkbox-list">
-              <li class="additional__item">
-                <label class="additional__label">
-                  <input class="additional-answer" type="checkbox" name="sweetener" checked>Сахарозаменитель
-                </label>
-              </li>
-              <li class="additional__item">
-                <label class="additional__label">
-                  <input class="additional-answer" type="checkbox" name="still-water">Питьевая вода
-                </label>
-              </li>
-              <li class="additional__item">
-                <label class="additional__label">
-                  <input class="additional-answer" type="checkbox" name="milk">Молоко
-                </label>
-              </li>
-              <li class="additional__item">
-                <label class="additional__label">
-                  <input class="additional-answer" type="checkbox" name="vitamines">Витамины
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="program-selection__button button apply-button" type="submit">Отправить заявку</button>
-          <p class="program-selection__mandatory-field">* — Обязательные поля</p>
-        </section>
+        <fieldset class="program-selection__additional additional">
+          <legend class="additional__title form-medium-heading visually-hidden">Дополнительные товары</legend>
+          <ul class="additional__checkbox-list">
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="additional-answer" type="checkbox" name="sweetener" checked>Сахарозаменитель
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="additional-answer" type="checkbox" name="still-water">Питьевая вода
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="additional-answer" type="checkbox" name="milk">Молоко
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="additional-answer" type="checkbox" name="vitamines">Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="program-selection__button button apply-button" type="submit">Отправить заявку</button>
+        <p class="program-selection__mandatory-field">* — Обязательные поля</p>
       </form>
     </main>
 
@@ -132,7 +136,11 @@
       <div class="big-footer__cooperation cooperation">
         <h3 class="cooperation__heading main-small-heading">Приглашаем к сотрудничеству!</h3>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="big-footer__cooperation map" src="#" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <img class="cooperation__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Адрес компании Cat Energy на карте">
+        </picture>
       </div>
 
       <div class="big-footer__general footer">
